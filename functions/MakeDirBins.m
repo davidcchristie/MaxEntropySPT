@@ -1,12 +1,13 @@
 function theta = MakeDirBins(DirInfo) 
 
 if nargin<1 % Default
-    ndirbins = 180;
-    startdir = -180;
-else    
-    ndirbins = DirInfo(1);
-    startdir = deg2rad(DirInfo(2));
+    DirInfo = [180 -180];
 end
+
+ndirbins = DirInfo(1);
+startdir = deg2rad(DirInfo(2));
+
+    
 
 
 
