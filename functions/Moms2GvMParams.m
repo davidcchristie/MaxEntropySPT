@@ -15,8 +15,8 @@ global SIGrid;
 % If it hasn't already been generated, do so...
 if isempty(SIGrid)
     tic
-    disp('Generating interpolation grid for first approximation of GvM parameters...');
-    SIGrid = GetInterpGrid;
+    disp('Generating flexi interpolation grid for first approximation of GvM parameters...');
+    SIGrid = GetInterpGridFlexi(4);
     toc
 end
 
@@ -51,8 +51,9 @@ end
     for fn = 1:size(TargCentredMoms,1)
         
        if OKParams(fn)
-           [GvMParamsRel(fn,:), NewtCounts] = CallNewton(TargCentredMoms(fn,:), InitialK1K2Psi(fn,:), tolerance);
-           GvMLocsD0(fn,:) = MomsAndJacobianFlexi(GvMParamsRel(fn,:), 50, true); % returns location params
+           [GvMParamsRel(fn,:), NewtCounts] = CallNewton(TargCentredMoms(fn,:), InitialK1K2Psi(fn,:), tolerance);  
+%             [GvMParamsRel(fn,:), normResids, iterCounts] = CallIterations(TargCentredMoms(fn,:), InitialK1K2Psi(fn,:), tolerance);
+           GvMLocsD0(fn,:) = MomsAndJacobianFlexi(GvMParamsRel(fn,:), 50, true); % returns location params   
            if nargout == 2
                Errs(fn,:) = MomsAndJacobianFlexi(GvMParamsRel(fn,:))-TargCentredMoms(fn,:);
            end
@@ -64,7 +65,7 @@ end
     F0_K1mu1_K2mu2(:,[2 4]) = GvMParamsRel(:,1:2); % kappa1 kappa2
     F0_K1mu1_K2mu2(:,3) = GvMLocsD0(:,1) + MWD; % mu 1
     F0_K1mu1_K2mu2(:,5) = GvMLocsD0(:,2) + MWD; % mu 2
-    
+            
 end
 
    

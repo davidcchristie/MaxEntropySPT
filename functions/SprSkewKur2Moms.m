@@ -1,4 +1,5 @@
-function MomSet = SprSkewKur2Moms(ParamSet)
+function MomSet = SprSkewKur2Moms(ParamSet) 
+% Converts parameters with spread in degrees, to centred moments
     
     % Spread, Skew, Kurtosis
     spr_rad = deg2rad(ParamSet(:,end-2));
