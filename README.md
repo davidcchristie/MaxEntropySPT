@@ -12,4 +12,4 @@ Also included is ExtractZip, which just allows you to extract zipped directories
 David Christie acknowledges the support of SEEC (Smart Efficient Energy Centre) at Bangor University, part-funded by the European Regional Development Fund (ERDF), administered by the Welsh Government.
 
 Cite as:
-David Christie (2020) MaxEntropySPT 
+David Christie (2022) MaxEntropySPT 
