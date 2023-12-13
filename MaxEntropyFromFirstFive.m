@@ -3,7 +3,7 @@ function [dirSpec, DirBins] = MaxEntropyFromFirstFive(ABMoments, DirBins)
     % .
     %
     % Trigonometric moments are defined as:
-    % a_n = int(D(theta) cos (n theta) d theta), b_n = int(D(theta) cos (n theta) d theta)
+    % a_n = int(D(theta) cos (n theta) d theta), b_n = int(D(theta) sin (n theta) d theta)
     %
     % Enter then in a 1 x 4 vector or 1 x 5 if you want to inlude a scaling a0
     %
