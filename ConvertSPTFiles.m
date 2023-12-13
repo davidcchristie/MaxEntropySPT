@@ -76,6 +76,6 @@ if genValidationFile == 1
 end
 
 disp(['Complete: Generated ', num2str(nfiles), ' directional spectra in ', num2str(totalTime), ' secs.']);
-disp('MaxEntropySPT by David Christie, Bangor University d.christie@bangor.ac.uk');
+disp('MaxEntropySPT by David Christie, Manchester University david.christie@manchester.ac.uk');
 
 
