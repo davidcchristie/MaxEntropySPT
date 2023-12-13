@@ -7,9 +7,11 @@ In Matlab, run the script "ConvertSPTFiles.m".  You will be given options to sel
 
 The UserSettings.m file allows the user to change the directional discretisation and accuracy, and has options for storing information about the frequency and directional bins in separate files.
 
-Also included is ExtractZip, which just allows you to extract zipped directories easily from within Matlab (handy for downloaded spectral files).  
+Also included is ExtractZip.m, which just allows you to extract zipped directories easily from within Matlab (handy for downloaded spectral files).  
 
 David Christie acknowledges the support of SEEC (Smart Efficient Energy Centre) at Bangor University, part-funded by the European Regional Development Fund (ERDF), administered by the Welsh Government.
+
+For more information, please email david.christie[*AT*]manchester.ac.uk
 
 Cite as:
 David Christie (2022) MaxEntropySPT 
