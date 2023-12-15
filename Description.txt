@@ -16,5 +16,11 @@ for some scaling D0, concentration parameters kappa_1 and kappa_2 and location p
 It is straightforward to calculate the trigonometric moments from these parameters, but going in the other direction to find the parameters from the moments requires multivariate Newtonian iteration.  Previous approaches (eg DIWASP, WAFO) have performed this in four dimensions, based on numerical integrations: (see  
 Hashimoto and Kobune. Estimation of directional spectra from the maximum entropy principle. In Proceedings of the 5th International Offshore Mechanics and Arctic Engineering Symposium, Tokyo, pages 80–85, 1986).  
 
-However, the problem may be rewritten (without loss of generality) in three dimensions, and the numerical integrations replaced by Bessel series.  This allows faster and more stable calculation.  Furthermore, three-dimensional interpolation grids can be populated, giving suitable initial values for the iteration to achieve convergence.
+However, the problem may be rewritten (without loss of generality) in three dimensions, and the numerical integrations replaced by Bessel series.  This allows faster and more stable calculation.  Furthermore, three-dimensional interpolation grids can be populated, giving suitable initial values for the iteration to achieve convergence.  This has all been implemented in this code.
 
+For full details of the mathematical methods, and applicaitions, see the open access journal article:
+
+David C. Christie,
+Efficient estimation of directional wave buoy spectra using a reformulated Maximum Shannon Entropy Method: Analysis and comparisons for coastal wave datasets,
+Applied Ocean Research, Volume 142,  103830 (2024)
+https://doi.org/10.1016/j.apor.2023.103830.
