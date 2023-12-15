@@ -14,4 +14,16 @@ David Christie acknowledges the support of SEEC (Smart Efficient Energy Centre) 
 For more information, please email david.christie[*AT*]manchester.ac.uk
 
 Cite as:
+David C. Christie,
+Efficient estimation of directional wave buoy spectra using a reformulated Maximum Shannon Entropy Method: Analysis and comparisons for coastal wave datasets,
+Applied Ocean Research,
+Volume 142,
+2024,
+103830,
+ISSN 0141-1187,
+https://doi.org/10.1016/j.apor.2023.103830
+
+for the method or 
+
 David Christie (2022) MaxEntropySPT 
+with the github link for the code.
